@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -9,16 +10,17 @@
     <script src="https://cdn.tailwindcss.com"></script>
     <link rel="stylesheet" href="styles.css">
     <!-- google fonts cdn link -->
-    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
-
+    <link rel="stylesheet"
+        href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
 </head>
-<body class="h-lvh">
+
+<body class="h-screen flex flex-col">
     <header>
-        <section class="wrapper py-5 flex justify-between relative max-sm:justify-center items-center">
-            <div class="logoSection flex justify-center items-center ">
+        <section class="wrapper py-3 flex justify-between relative max-sm:justify-center items-center">
+            <div class="logoSection flex justify-center items-center">
                 <img src="asset/images/Logo.png" alt="Logo Image">
             </div>
-            <div class="flex justify-center items-center max-sm:hidden">
+            <div class="flex justify-center items-center max-sm:hidden text-gray-600">
                 <ul class="hidden lg:flex">
                     <li class="mr-2"><a href="#" class="font-bold">Deliver&nbsp;to:</a></li>
                     <li>
@@ -26,7 +28,10 @@
                             <span class="material-symbols-outlined font-bold text-[#FF9E00] text-[20px]">
                                 location_on
                             </span>
-                            <p class="flex">Current Location <span class="font-semibold ml-2">Mohammadpur Bus Stand, Dhaka</span></p>
+                            <p class="flex">
+                                <span class="font-medium">Current Location </span>
+                                <span class="font-bold ml-2">Mohammadpur Bus Stand, Dhaka</span>
+                            </p>
                         </a>
                     </li>
                 </ul>
@@ -34,23 +39,24 @@
             <div class="flex justify-center items-center max-sm:hidden">
                 <ul class="flex gap-10 justify-center items-center">
                     <li class="flex justify-center items-center">
-                        <a href="#" class="flex">
-                            <span class="material-symbols-outlined text-[#FF9E00] font-bold text-[24px]">
+                        <a href="#" class="flex gap-2">
+                            <span class="material-symbols-outlined text-orange-300 font-semibold text-[24px]">
                                 search
                             </span>
-                            <p class="font-semibold">Search Food</p>
+                            <p class="font-bold text-gray-600">Search Food</p>
                         </a>
                     </li>
-                    <li class="flex p-2 rounded-md bg-black text-white">
-                        <a href="#" class="flex">
-                            <span class="material-symbols-outlined text-[#FF9E00] font-bold">
+                    <li class="flex p-2 px-5 rounded-md bg-white text-orange-300 font-semibold shadow-lg shadow-orange-300">
+                        <a href="#" class="flex gap-2">
+                            <span class="material-symbols-outlined text-orange-300 font-semibold">
                                 person
                             </span>
                             <span>Login</span>
                         </a>
                     </li>
                     <li>
-                        <span class="material-symbols-outlined text-[#FF9E00] flex justify-center items-center">
+                        <span
+                            class="material-symbols-outlined text-[#FF9E00] flex justify-center items-center lg:hidden">
                             menu
                         </span>
                     </li>
@@ -62,6 +68,50 @@
         </section>
     </header>
 
-    
+    <main class="bg-[url('asset/images/bg.png')] bg-cover bg-center flex-grow items-center justify-center">
+        <section class="wrapper flex items-center justify-center h-[100%]">
+            <div class="w-[60%]">
+                <h2 class="text-[62px] text-white font-bold pb-2">Are you starving?</h2>
+                <p class="text-[18px] font-semibold pb-2 text-gray-600">within few clicks, find meals that are accessible new you</p>
+                <div class="bg-white w-[100%] py-5 flex flex-col px-5 gap-10 rounded-xl my-5">
+                    <div class="flex gap-5 border-b">
+                        <a href="#" class="bg-orange-100 flex items-center justify-center rounded-md px-5 py-1.5 gap-2 text-orange-600 font-bold">
+                            <span class="material-symbols-outlined">
+                                two_wheeler
+                            </span>
+                            <span>Delivery</span>
+                        </a>
+                        <a href="#" class=" flex items-center justify-center rounded-md px-5 py-1.5 gap-2 font-bold text-gray-600">
+                            <span class="material-symbols-outlined">
+                                local_mall
+                             </span>
+                             <span>Pickup</span>
+                        </a>
+                    </div>
+                    <div>
+                        <div class="flex items-center gap-2 justify-between">
+                            <div class="bg-orange-50 py-2 px-2 w-[74%] flex items-center rounded-md">
+                                <span class="material-symbols-outlined text-orange-500 font-bold">
+                                    location_on
+                                </span>
+                                <input type="text" placeholder="Enter Your Address" class="px-2 bg-transparent">
+                            </div>
+                            <button class="flex justify-center items-center gap-2 bg-orange-500 text-white py-2 px-4 rounded-lg font-bold">
+                                <span class="material-symbols-outlined">
+                                    search
+                                </span>
+                                <span class="flex justify-center ">Find Food</span>
+                            </button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="w-[40%] h-[100%] flex items-end justify-end">
+                <img src="asset/images/mainImg.png" alt="mainImg" class="w-[90%] ">
+            </div>
+        </section>
+    </main>
+
 </body>
+
 </html>
