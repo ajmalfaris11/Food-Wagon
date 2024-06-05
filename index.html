@@ -20,7 +20,7 @@
             <div class="logoSection flex justify-center items-center">
                 <img src="asset/images/Logo.png" alt="Logo Image">
             </div>
-            <div class="flex justify-center items-center max-sm:hidden text-gray-600">
+            <div class="flex justify-center items-center max-[1150px]:hidden text-gray-600">
                 <ul class="hidden lg:flex">
                     <li class="mr-2"><a href="#" class="font-bold">Deliver&nbsp;to:</a></li>
                     <li>
@@ -69,12 +69,12 @@
     </header>
 
     <main class="bg-[url('asset/images/bg.png')] bg-cover bg-center flex-grow items-center justify-center">
-        <section class="wrapper flex items-center justify-center h-[100%]">
-            <div class="w-[60%]">
-                <h2 class="text-[62px] text-white font-bold pb-2">Are you starving?</h2>
-                <p class="text-[18px] font-semibold pb-2 text-gray-600">within few clicks, find meals that are accessible new you</p>
+        <section class="wrapper flex flex-col sm:flex-row items-center justify-center h-[100%]">
+            <div class="w-[60%] max-sm:w-[100%] max-sm:mt-10">
+                <h2 class="text-[62px] text-white font-bold pb-2 max-lg:text-[48px] max-md:text-[36px] max-sm:text-[52px] max-sm:text-center">Are you starving?</h2>
+                <p class="text-[18px] font-semibold pb-2 text-gray-600 max-sm:text-center">within few clicks, find meals that are accessible new you</p>
                 <div class="bg-white w-[100%] py-5 flex flex-col px-5 gap-10 rounded-xl my-5">
-                    <div class="flex gap-5 border-b">
+                    <div class="flex gap-5 justify-center sm:justify-start">
                         <a href="#" class="bg-orange-100 flex items-center justify-center rounded-md px-5 py-1.5 gap-2 text-orange-600 font-bold">
                             <span class="material-symbols-outlined">
                                 two_wheeler
@@ -89,8 +89,8 @@
                         </a>
                     </div>
                     <div>
-                        <div class="flex items-center gap-2 justify-between">
-                            <div class="bg-orange-50 py-2 px-2 w-[74%] flex items-center rounded-md">
+                        <div class="flex items-center gap-5 sm:gap-2 justify-between flex-col lg:flex-row">
+                            <div class="bg-orange-50 py-2 px-2 w-[100%] sm:w-[74%]  flex items-center rounded-md">
                                 <span class="material-symbols-outlined text-orange-500 font-bold">
                                     location_on
                                 </span>
@@ -106,7 +106,7 @@
                     </div>
                 </div>
             </div>
-            <div class="w-[40%] h-[100%] flex items-end justify-end">
+            <div class="w-[40%] max-sm:w-[100%] h-[100%] flex items-end justify-end max-sm:justify-center">
                 <img src="asset/images/mainImg.png" alt="mainImg" class="w-[90%] ">
             </div>
         </section>
